@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, sans-serif; max-width: 100ch; margin: 0 auto; padding: 2rem; display: flex; gap: 3rem; }
+    nav { min-width: 250px; }
+    main { flex-grow: 1; line-height: 1.6; }
+    details { margin-top: 1rem; }
+    summary { cursor: pointer; font-weight: bold; }
+    ul { list-style: none; padding-left: 0; }
+    li { margin-bottom: 0.5rem; }
+    a { color: inherit; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <nav>
+    <h3>Community</h3>
+    <ul>
+      <li><a href="https://discord.gg/bePrj9W">Discord</a></li>
+      <li><a href="https://github.com/PSP-Archive">PSP Archive</a></li>
+      <li><a href="https://github.com/pspdev">PSPDEV</a></li>
+    </ul>
+    <h3>Guides</h3>
+    <ul>
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      <li><a href="{{ '/installing-cfw.html' | relative_url }}">Installing CFW</a></li>
+      <li><a href="{{ '/psp-terminology.html' | relative_url }}">PSP Terminology</a></li>
+      <li><a href="{{ '/dumping-games.html' | relative_url }}">Dumping Games</a></li>
+      <li><a href="{{ '/getting-homebrew.html' | relative_url }}">Getting Homebrew</a></li>
+      <li><a href="{{ '/common-issues.html' | relative_url }}">Common Issues</a></li>
+    </ul>
+    <details>
+      <summary>Troubleshooting & Extras</summary>
+      <ul style="padding-left: 1rem; margin-top: 0.5rem;">
+        <li><a href="{{ '/error-codes.html' | relative_url }}">Error Codes</a></li>
+        <li><a href="{{ '/hardware-issues.html' | relative_url }}">Hardware Issues</a></li>
+        <li><a href="{{ '/tips-and-tricks.html' | relative_url }}">Tips and Tricks</a></li>
+      </ul>
+    </details>
+  </nav>
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>
