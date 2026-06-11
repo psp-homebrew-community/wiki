@@ -493,8 +493,9 @@
             matches.forEach(match => {
               const li = document.createElement('li');
               const a = document.createElement('a');
-              
-              if (match.title === "Error Codes" && query.length > 3) {
+              const isErrorCode = /^(?=.*[0-9])[0-9a-f]{4,11}$|^f{4,8}$|^(ukn|drn|cta)[0-9a-f]{0,9}$/i.test(query);
+
+              if (match.title === "Error Codes" && isErrorCode) {
                 const upperQuery = query.toUpperCase();
                 a.href = match.url + "#:~:text=" + encodeURIComponent(upperQuery);
                 a.textContent = upperQuery + " - " + match.title;
