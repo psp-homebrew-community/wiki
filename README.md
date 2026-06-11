@@ -1,3 +1,7 @@
+![psp](https://img.shields.io/badge/psp-1000?style=for-the-badge&logo=PlayStation&logoColor=ffffff&labelColor=241f31&color=3d3846)
+![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
+
 # wiki
 The PSP Homebrew Community Wiki
 
