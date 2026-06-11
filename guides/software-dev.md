@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Software Development on the PSP
+title: Software Development
 ---
 # Developing Homebrew
 
