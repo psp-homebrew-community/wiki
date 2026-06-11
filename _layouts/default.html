@@ -495,14 +495,9 @@
               const a = document.createElement('a');
               
               if (match.title === "Error Codes" && query.length > 3) {
-                a.href = match.url + "#:~:text=" + encodeURIComponent(query);
-                const idx = match.content.toLowerCase().indexOf(query);
-                if (idx > -1) {
-                  const snippet = match.content.substring(idx, idx + 45).replace(/\s+/g, ' ').trim();
-                  a.textContent = "Error: " + snippet + "...";
-                } else {
-                  a.textContent = match.title;
-                }
+                const upperQuery = query.toUpperCase();
+                a.href = match.url + "#:~:text=" + encodeURIComponent(upperQuery);
+                a.textContent = upperQuery + " - " + match.title;
               } else {
                 a.href = match.url;
                 a.textContent = match.title;
