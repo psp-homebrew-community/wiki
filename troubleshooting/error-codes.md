@@ -1,14 +1,16 @@
 ---
 layout: default
-title: Error Codes
+title: PSP Error Codes
 ---
-# Error Codes
+# PSP Error Codes
 
 A list of common PSP error codes and how to fix them.
 This list is NOT
 comprehensive and needs a lot of work.
 Most codes cross referenced from 
 [PSP Dev Wiki](https://www.psdevwiki.com/psp/index.php?title=Error_Codes)[]()
+
+List of all error codes from [rivetdb-psp](https://github.com/isage/rivetdb-psp)
 
 
 |Error Code|Reason|Solution|
