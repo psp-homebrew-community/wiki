@@ -468,6 +468,19 @@
         <ul class="search-results"></ul>
       </div>
       
+      <ul style="list-style: none; padding: 0; margin: 0 0 1rem 0;">
+      {% assign root_pages = site.html_pages | where: "dir", "/" | sort: "nav_order" %}
+      {% for p in root_pages %}
+        {% if p.url != "/" and p.title %}
+          <li style="margin-bottom: 0.5rem;">
+            <a href="{{ p.url | relative_url }}" style="color: var(--text); text-decoration: none; font-weight: 600;" {% if p.url == page.url %}style="color: var(--border) !important;"{% endif %}>
+              {{ p.title }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+
       {% assign grouped_pages = site.html_pages | group_by: "dir" | sort: "name" %}
       {% assign roots_str = "" %}
       {% for group in grouped_pages %}
