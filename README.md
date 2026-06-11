@@ -22,3 +22,11 @@ title: Your Page Title
 ```
 
 That's about it.
+
+### Error codes
+You can add error code solutions / explanations in the current format to the file aas long as you don't touch the bottom block, the two lists will be automagically combined at build time
+and you'll get a nice combined list - this makes it easy to add solutions for different codes.
+Data is refresh every month.
+
+### Homebrew list
+See the actions, data is refresh every week.
