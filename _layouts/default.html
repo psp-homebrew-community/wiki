@@ -578,6 +578,8 @@
   </div>
   
   <script>
+    let rivetDbCache = null;
+
     fetch("{{ '/search.json' | relative_url }}")
       .then(r => r.json())
       .then(data => {
@@ -585,7 +587,7 @@
         containers.forEach(c => c.classList.add('visible'));
         
         document.querySelectorAll('.search-input').forEach(input => {
-          input.addEventListener('input', (e) => {
+          input.addEventListener('input', async (e) => {
             const query = e.target.value.trim().toLowerCase();
             const resultsList = e.target.nextElementSibling;
             resultsList.innerHTML = '';
@@ -595,21 +597,48 @@
               (page.title && page.title.toLowerCase().includes(query)) || 
               (page.content && page.content.toLowerCase().includes(query))
             ).slice(0, 5);
+            
+            const isErrorCode = /^(?=.*[0-9])[0-9a-f]{4,11}$|^f{4,8}$|^(ukn|drn|cta)[0-9a-f]{0,9}$/i.test(query);
 
-            matches.forEach(match => {
-              const li = document.createElement('li');
-              const a = document.createElement('a');
-              const isErrorCode = /^(?=.*[0-9])[0-9a-f]{4,11}$|^f{4,8}$|^(ukn|drn|cta)[0-9a-f]{0,9}$/i.test(query);
-
-              if (match.title === "Error Codes" && isErrorCode) {
-                const upperQuery = query.toUpperCase();
-                a.href = match.url + "#:~:text=" + encodeURIComponent(upperQuery);
-                a.textContent = upperQuery + " - " + match.title;
-              } else {
-                a.href = match.url;
-                a.textContent = match.title;
+            if (isErrorCode) {
+              if (!rivetDbCache) {
+                try {
+                  const res = await fetch("{{ '/assets/data/rivetdb.json' | relative_url }}");
+                  rivetDbCache = await res.json();
+                } catch(err) { rivetDbCache = {}; }
               }
               
+              const upperQuery = query.toUpperCase();
+              let foundName = null;
+              
+              for (const [facHex, facility] of Object.entries(rivetDbCache)) {
+                for (const [errHex, error] of Object.entries(facility.errors)) {
+                  const facInt = parseInt(facHex, 16);
+                  const errInt = parseInt(errHex, 16);
+                  const fullCode = ((0x80000000 | (facInt << 16) | errInt) >>> 0).toString(16).toUpperCase().padStart(8, '0');
+                  if (fullCode === upperQuery || fullCode.includes(upperQuery)) {
+                    foundName = error.name;
+                    break;
+                  }
+                }
+                if (foundName) break;
+              }
+              
+              const li = document.createElement('li');
+              const a = document.createElement('a');
+              a.href = "{{ '/troubleshooting/error-codes.html' | relative_url }}#" + encodeURIComponent(upperQuery);
+              a.textContent = upperQuery + (foundName ? " - " + foundName : " - Error Codes");
+              li.appendChild(a);
+              resultsList.appendChild(li);
+            }
+
+            matches.forEach(match => {
+              if (match.title === "Error Codes" && isErrorCode) return; 
+
+              const li = document.createElement('li');
+              const a = document.createElement('a');
+              a.href = match.url;
+              a.textContent = match.title;
               li.appendChild(a);
               resultsList.appendChild(li);
             });
