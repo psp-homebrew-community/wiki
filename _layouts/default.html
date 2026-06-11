@@ -11,7 +11,7 @@
   
   {% assign seo_description = page.description %}
   {% if seo_description == nil or seo_description == "" %}
-    {% assign seo_description = page.content | strip_html | strip_newlines | truncate: 160 %}
+    {% assign seo_description = content | strip_html | normalize_whitespace | truncate: 160 %}
   {% endif %}
   {% if seo_description == nil or seo_description == "" %}
     {% assign seo_description = site.description %}
