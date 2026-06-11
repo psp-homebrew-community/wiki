@@ -161,15 +161,53 @@
       letter-spacing: -0.025em;
     }
 
-    .sidebar h3 {
+    .sidebar-group > summary {
       font-size: 0.875rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
       margin-bottom: 0.5rem;
       color: var(--sidebar-text);
       opacity: 0.8;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
+    .sidebar-group > summary::-webkit-details-marker { display: none; }
+    .sidebar-group > summary::after {
+      content: "▼";
+      font-size: 0.6rem;
+      transition: transform 0.2s;
+    }
+    .sidebar-group:not([open]) > summary::after {
+      transform: rotate(-90deg);
+    }
+    
+    .sidebar-subgroup > summary {
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin: 0.5rem 0;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      opacity: 0.9;
+    }
+    .sidebar-subgroup > summary::-webkit-details-marker { display: none; }
+    .sidebar-subgroup > summary::before {
+      content: "▼";
+      font-size: 0.55rem;
+      transition: transform 0.2s;
+    }
+    .sidebar-subgroup:not([open]) > summary::before {
+      transform: rotate(-90deg);
+    }
+
+    .group-content { padding-left: 0; }
+    .sidebar-subgroup ul { padding-left: 0.75rem; border-left: 1px solid var(--border); margin-left: 0.2rem; }
 
     .sidebar ul {
       list-style: none;
@@ -395,15 +433,47 @@
       </div>
       
       {% assign grouped_pages = site.html_pages | group_by: "dir" | sort: "name" %}
+      {% assign roots_str = "" %}
       {% for group in grouped_pages %}
         {% if group.name != "/" %}
-          <h3>{{ group.name | replace: "/", "" | capitalize }}</h3>
-          <ul>
-            {% for p in group.items %}
-              <li><a href="{{ p.url | relative_url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title | default: p.name }}</a></li>
-            {% endfor %}
-          </ul>
+          {% assign parts = group.name | split: "/" %}
+          {% assign roots_str = roots_str | append: parts[1] | append: "|" %}
         {% endif %}
+      {% endfor %}
+      {% assign roots = roots_str | split: "|" | uniq | sort %}
+
+      {% for root in roots %}
+        <details class="sidebar-group" open>
+          <summary>{{ root | replace: "-", " " | capitalize }}</summary>
+          <div class="group-content">
+            
+            {% assign root_path = "/" | append: root | append: "/" %}
+            {% assign direct_group = grouped_pages | where: "name", root_path | first %}
+            {% if direct_group %}
+              <ul>
+              {% for p in direct_group.items %}
+                <li><a href="{{ p.url | relative_url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title | default: p.name }}</a></li>
+              {% endfor %}
+              </ul>
+            {% endif %}
+            
+            {% for group in grouped_pages %}
+              {% assign parts = group.name | split: "/" %}
+              {% if parts[1] == root and parts.size > 2 %}
+                {% assign sub = parts[2] %}
+                <details class="sidebar-subgroup">
+                  <summary>{{ sub | replace: "-", " " | capitalize }}</summary>
+                  <ul>
+                  {% for p in group.items %}
+                    <li><a href="{{ p.url | relative_url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title | default: p.name }}</a></li>
+                  {% endfor %}
+                  </ul>
+                </details>
+              {% endif %}
+            {% endfor %}
+            
+          </div>
+        </details>
       {% endfor %}
 
       <div class="external-links">
