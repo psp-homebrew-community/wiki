@@ -266,6 +266,25 @@
       opacity: 1;
     }
 
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      font-size: 0.875rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+    th {
+      background-color: var(--sidebar-bg);
+      font-weight: 600;
+    }
+    tr:nth-child(even) {
+      background-color: light-dark(rgba(0,0,0,0.02), rgba(255,255,255,0.02));
+    }
+
     .pagination {
       display: flex;
       justify-content: space-between;
@@ -294,6 +313,14 @@
       position: relative;
       margin-bottom: 1.5rem;
       display: none;
+    }
+    .search-container.visible {
+      display: block;
+      animation: fadeIn 0.4s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .search-input {
       width: 100%;
@@ -449,11 +476,11 @@
       .then(r => r.json())
       .then(data => {
         const containers = document.querySelectorAll('.js-search');
-        containers.forEach(c => c.style.display = 'block');
+        containers.forEach(c => c.classList.add('visible'));
         
         document.querySelectorAll('.search-input').forEach(input => {
           input.addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
+            const query = e.target.value.trim().toLowerCase();
             const resultsList = e.target.nextElementSibling;
             resultsList.innerHTML = '';
             if (!query) return;
@@ -466,8 +493,21 @@
             matches.forEach(match => {
               const li = document.createElement('li');
               const a = document.createElement('a');
-              a.href = match.url;
-              a.textContent = match.title;
+              
+              if (match.title === "Error Codes" && query.length > 3) {
+                a.href = match.url + "#:~:text=" + encodeURIComponent(query);
+                const idx = match.content.toLowerCase().indexOf(query);
+                if (idx > -1) {
+                  const snippet = match.content.substring(idx, idx + 45).replace(/\s+/g, ' ').trim();
+                  a.textContent = "Error: " + snippet + "...";
+                } else {
+                  a.textContent = match.title;
+                }
+              } else {
+                a.href = match.url;
+                a.textContent = match.title;
+              }
+              
               li.appendChild(a);
               resultsList.appendChild(li);
             });
