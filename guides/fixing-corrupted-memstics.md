@@ -14,7 +14,7 @@ I've added EMOJIS to point you to look at the warnings, please *actually* read t
 
 # On Linux
 ### Finding Your SD Card
-:warning: **WARNING** :warning:
+⚠️ **WARNING** ⚠️
 
 If you pick the wrong drive here, there's a real possiblity to cause ❗ **IRREVERSIBLE** ❗ damage to your *main partition* / other drives.
 
