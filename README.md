@@ -21,6 +21,9 @@ title: Your Page Title
 ---
 ```
 
+##### Images in pages
+Please use /assets/images/ for images, in webp format if possible.
+
 That's about it.
 
 ### Error codes
