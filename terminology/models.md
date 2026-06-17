@@ -4,20 +4,9 @@ title: PSP Models
 ---
 # List of PSP Models
 
-
 |Feature|PSP-1000|PSP-2000|PSP-3000|PSP Go (PSP-N1000)|PSP Street (PSP-E1000)|
 |-|-|-|-|-|-|
-|**Image**|
-![image](https://raw.githubusercontent.com/psp-homebrew-community/wiki/main/assets/images/models/Psp-1000.webp)
-|
-![image](https://raw.githubusercontent.com/psp-homebrew-community/wiki/main/assets/images/models/PSP-2000.webp)
-|
-![image](https://raw.githubusercontent.com/psp-homebrew-community/wiki/main/assets/images/models/PSP-3000-Silver.webp)
-|
-![image](https://raw.githubusercontent.com/psp-homebrew-community/wiki/main/assets/images/models/PSP-Go-FL-Open.webp)
-|
-![image](https://raw.githubusercontent.com/psp-homebrew-community/wiki/main/assets/images/models/PSP_E1000_illustration.webp)
-|
+|**Image**|<img src="https://raw.githubusercontent.com/psp-homebrew-community/wiki/main/assets/images/models/Psp-1000.webp" width="150" alt="PSP-1000">|<img src="https://raw.githubusercontent.com/psp-homebrew-community/wiki/main/assets/images/models/PSP-2000.webp" width="150" alt="PSP-2000">|<img src="https://raw.githubusercontent.com/psp-homebrew-community/wiki/main/assets/images/models/PSP-3000-Silver.webp" width="150" alt="PSP-3000">|<img src="https://raw.githubusercontent.com/psp-homebrew-community/wiki/main/assets/images/models/PSP-Go-FL-Open.webp" width="150" alt="PSP Go">|<img src="https://raw.githubusercontent.com/psp-homebrew-community/wiki/main/assets/images/models/PSP_E1000_illustration.webp" width="150" alt="PSP Street">|
 |**Original release date**|December 12, 2004 (Japan)|August 30, 2007 (Hong Kong)|October 14, 2008 (North America)|October 1, 2009 (NA and EU)|October 26, 2011 (EU and PAL)|
 |**Discontinued**|December 2014|December 2014|December 2012|April 20, 2011|December 2014|
 |**Display resolution, type**|480 x 272, TFT|480 x 272, TFT|480 x 272, TFT|480 x 272, TFT|480 x 272, TFT|
@@ -34,4 +23,3 @@ Images and source text from Wikipedia, Licensed under the Creative Commons 4.0
 License.
 
 https://en.wikipedia.org/wiki/Template:List_of_PSP_Models
-
