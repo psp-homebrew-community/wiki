@@ -97,7 +97,9 @@ title: Memory Cards & Adapters
   <p class="lb-caption" id="lb-caption"></p>
 </div>
 
-## Memory Stick PRO Duo
+## PSP 1000 / 2000 / 3000
+
+### Memory Stick PRO Duo
 
 <span class="section-label label-psp">PSP 1000 / 2000 / 3000</span>
 
@@ -124,7 +126,7 @@ The PSP uses the **Memory Stick PRO Duo** format. It is the only thing that fits
   </a>
 </div>
 
-## microSD Adapter (PSP 1000 / 2000 / 3000)
+### microSD Adapter
 
 <span class="section-label label-psp">PSP 1000 / 2000 / 3000</span>
 
@@ -139,28 +141,11 @@ Genuine Memory Stick PRO Duo cards are hard to find new and often expensive, esp
   </a>
 </div>
 
-## PSP Go
-
-<span class="section-label label-psp">PSP Go only</span>
-
-The PSP Go (N1000) has no Memory Stick PRO Duo slot. Instead it has a **Memory Stick Micro (M2)** slot on the side of the unit. Sony officially supported up to 16 GB. Since M2 cards are getting **expesnive**, the community made a flex-ribbon **microSD adapter** that plugs into the M2 slot and routes to a microSD card sticking out the side. PSP Go only; no other PSP model has an M2 slot.
-
-<div class="img-grid">
-  <a class="img-card" href="#" data-caption="A flex-ribbon adapter that connects to the PSP Go's internal M2 slot and accepts a standard microSD card. PSP Go only.">
-    <figure>
-      <img src="{{ '/assets/images/memsticks/psp_go_microsd_adapter.jpg' | relative_url }}" alt="psp go microsd flex ribbon adapter">
-      <figcaption>PSP Go microSD adapter</figcaption>
-    </figure>
-  </a>
-</div>
-
 ---
 
-## Not for PSP 1000 / 2000 / 3000
+## PSP Go
 
-The following formats don't work in the PSP 1000, 2000, or 3000. They're shown here because they can look confusingly similar to Memory Stick PRO Duo. The M2 especially trips people up since it *is* the PSP Go's native format. And sometimes even the Vita card gets mistaken for one.
-
-### Sony M2 (Memory Stick Micro)
+### M2 (Memory Stick Micro)
 
 <span class="section-label label-psp">PSP Go</span>
 <span class="section-label label-no">Not for PSP 1000 / 2000 / 3000</span>
@@ -181,6 +166,25 @@ The M2 is Sony's micro format, used in Sony Ericsson phones, Walkman players, an
     </figure>
   </a>
 </div>
+
+### microSD Adapter
+
+<span class="section-label label-psp">PSP Go only</span>
+
+The PSP Go (N1000) has no Memory Stick PRO Duo slot. Instead it has a **Memory Stick Micro (M2)** slot on the side of the unit. Sony officially supported up to 16 GB. Since M2 cards are getting **expesnive**, the community made a flex-ribbon **microSD adapter** that plugs into the M2 slot and routes to a microSD card sticking out the side. PSP Go only; no other PSP model has an M2 slot.
+
+<div class="img-grid">
+  <a class="img-card" href="#" data-caption="A flex-ribbon adapter that connects to the PSP Go's internal M2 slot and accepts a standard microSD card. PSP Go only.">
+    <figure>
+      <img src="{{ '/assets/images/memsticks/psp_go_microsd_adapter.jpg' | relative_url }}" alt="psp go microsd flex ribbon adapter">
+      <figcaption>PSP Go microSD adapter</figcaption>
+    </figure>
+  </a>
+</div>
+
+---
+
+## Not Directly Compatible
 
 ### SD Cards
 
@@ -215,11 +219,11 @@ Standard SD and microSD cards are not compatible with the PSP's card slot in any
   </a>
 </div>
 
-### PS Vita Memory Card & SD2VITA
+### PS Vita Memory Card
 
 <span class="section-label label-no">Not for PSP</span>
 
-The PS Vita uses its own proprietary memory card format - physically similar in size to M2 but incompatible. The SD2VITA is an adapter for the PS Vita's *game card slot* that accepts microSD. Neither, obviously - support the PSP; but are shown here for brevity.
+The PS Vita uses its own proprietary memory card format - physically similar in size to M2 but incompatible.
 
 <div class="img-grid">
   <a class="img-card" href="#" data-caption="PS Vita Memory Card (64GB)">
@@ -228,6 +232,15 @@ The PS Vita uses its own proprietary memory card format - physically similar in 
       <figcaption>PS Vita Memory Card</figcaption>
     </figure>
   </a>
+</div>
+
+### SD2VITA
+
+<span class="section-label label-no">Not for PSP</span>
+
+The SD2VITA is an adapter for the PS Vita's *game card slot* that accepts microSD.
+
+<div class="img-grid">
   <a class="img-card" href="#" data-caption="SD2VITA">
     <figure>
       <img src="{{ '/assets/images/memsticks/sd2vita.webp' | relative_url }}" alt="sd2vita microsd adapter for ps vita">
