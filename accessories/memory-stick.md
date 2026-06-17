@@ -165,7 +165,7 @@ The following formats don't work in the PSP 1000, 2000, or 3000. They're shown h
 <span class="section-label label-psp">PSP Go</span>
 <span class="section-label label-no">Not for PSP 1000 / 2000 / 3000</span>
 
-The M2 is Sony's micro format, used in Sony Ericsson phones, Walkman players, and the PSP Go. It's much smaller than MS PRO Duo (15 × 12.5 mm vs 31 × 20 mm). On a PSP 1000/2000/3000 it's useless; those models have no M2 slot. Sony also made an **M2 Adaptor** (MSAC-MMS) that puts an M2 into a MS PRO Duo-sized shell. Looks right, but the older PSP firmware won't recognize it. The PSP Go is the only PSP that uses M2 natively.
+The M2 is Sony's micro format, used in Sony Ericsson phones, Walkman players, and the PSP Go. It's much smaller than MS PRO Duo (15 × 12.5 mm vs 31 × 20 mm). On a PSP 1000/2000/3000 it's useless; those models have no M2 slot.
 
 <div class="img-grid">
   <a class="img-card" href="#" data-caption="Sony M2 (Memory Stick Micro, 8GB). Much smaller than MS PRO Duo. Not for PSP 1000/2000/3000.">
