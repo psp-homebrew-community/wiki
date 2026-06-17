@@ -38,7 +38,7 @@ See the actions, data is refresh every week.
 ### Users who've contributd to the wiki
 
 <a href="https://github.com/psp-homebrew-community/wiki/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=psp-homebrew-community/wiki" />
+  <img src="https://stg.contrib.rocks/image?repo=psp-homebrew-community/wiki" />
 </a>
 
 <sub>Made with contrib.rocks</sub>
