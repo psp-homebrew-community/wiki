@@ -33,3 +33,15 @@ Data is refresh every month.
 
 ### Homebrew list
 See the actions, data is refresh every week.
+
+
+### Users who've contributd to the wiki
+
+<a href="https://github.com/psp-homebrew-community/wiki/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=psp-homebrew-community/wiki" />
+</a>
+
+<sub>Made with contrib.rocks</sub>
+
+ 
+Thank you so much for helping make the wiki better!
