@@ -19,7 +19,8 @@ title: PSP Models
 |**Battery**|3.6 V DC 1800 mAh removable battery; upgradeable to 2200 mAh|3.6 V DC 1200 mAh removable battery; upgradeable to 2200 mAh (with extended battery cover)|3.6 V DC 1200 mAh removable battery; upgradeable to 2200 mAh (with extended battery cover)|3.6 V DC 930 mAh non removable battery|3.6 V DC non removable battery|
 |**Original system software**|1.00|3.60|4.20|5.70|6.50|
 
-Images and source text from Wikipedia, Licensed under the Creative Commons 4.0
+
+Images and source text from [Wikipedia](https://en.wikipedia.org/wiki/Template:List_of_PSP_Models
+), Licensed under the Creative Commons 4.0
 License.
 
-https://en.wikipedia.org/wiki/Template:List_of_PSP_Models
