@@ -57,10 +57,10 @@ title: Memory Cards & Adapters
 }
 .img-card figure {
   margin: 0;
-  border: 1px solid #ddd;
+  border: 1px solid #333;
   border-radius: 4px;
   overflow: hidden;
-  background: #f8f8f8;
+  background: #1a1a1a;
 }
 .img-card img {
   width: 100%;
@@ -72,10 +72,10 @@ title: Memory Cards & Adapters
 .img-card:hover img { opacity: .82; }
 .img-card figcaption {
   font-size: .78rem;
-  color: #444;
+  color: #bbb;
   padding: 6px 8px 7px;
   line-height: 1.4;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #2e2e2e;
 }
 .section-label {
   display: inline-block;
@@ -110,7 +110,7 @@ The PSP uses the **Memory Stick PRO Duo** format. It is the only thing that fits
       <figcaption>Sony MS PRO Duo 2GB</figcaption>
     </figure>
   </a>
-  <a class="img-card" href="#" data-caption="SanDisk Memory Stick PRO Duo (512MB), A small card.>
+  <a class="img-card" href="#" data-caption="SanDisk Memory Stick PRO Duo (512MB). A small card.">
     <figure>
       <img src="{{ '/assets/images/memsticks/small_memstick.webp' | relative_url }}" alt="sandisk memory stick pro duo 512mb">
       <figcaption>SanDisk MS PRO Duo 512MB</figcaption>
