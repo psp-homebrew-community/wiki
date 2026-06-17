@@ -143,7 +143,7 @@ Genuine Memory Stick PRO Duo cards are hard to find new and often expensive, esp
 
 <span class="section-label label-psp">PSP Go only</span>
 
-The PSP Go (N1000) is different. It has **no Memory Stick PRO Duo slot**! It uses an internal Memory Stick Micro (M2) slot and has 16 GB of built-in flash. To expand storage on a PSP Go, a special flex-ribbon **microSD adapter** has been made by the community. It routes from the M2 slot inside the PSP Go to a microSD card that sticks out the side. This is a PSP Go-specific mod and does not apply to *any* other PSP model.
+The PSP Go (N1000) has no Memory Stick PRO Duo slot. Instead it has a **Memory Stick Micro (M2)** slot on the side of the unit. Sony officially supported up to 16 GB. Since M2 cards are getting **expesnive**, the community made a flex-ribbon **microSD adapter** that plugs into the M2 slot and routes to a microSD card sticking out the side. PSP Go only; no other PSP model has an M2 slot.
 
 <div class="img-grid">
   <a class="img-card" href="#" data-caption="A flex-ribbon adapter that connects to the PSP Go's internal M2 slot and accepts a standard microSD card. PSP Go only.">
@@ -156,27 +156,28 @@ The PSP Go (N1000) is different. It has **no Memory Stick PRO Duo slot**! It use
 
 ---
 
-## Not for PSP
+## Not for PSP 1000 / 2000 / 3000
 
-The following formats are **not compatible** with the PSP. They are shown here because they can look confusingly similar to Memory Stick PRO Duo... specially the Sony M2... and sometimes even the Vita's memory card!
+The following formats don't work in the PSP 1000, 2000, or 3000. They're shown here because they can look confusingly similar to Memory Stick PRO Duo. The M2 especially trips people up since it *is* the PSP Go's native format. And sometimes even the Vita card gets mistaken for one.
 
 ### Sony M2 (Memory Stick Micro)
 
-<span class="section-label label-no">Not for PSP</span>
+<span class="section-label label-psp">PSP Go</span>
+<span class="section-label label-no">Not for PSP 1000 / 2000 / 3000</span>
 
-The M2 is Sony's phone-era micro format, used in older Sony Ericsson handsets and early Walkman players. It is much smaller than a MS PRO Duo (15 × 12.5 mm vs 31 × 20 mm). Sony also made an **M2 Adaptor** (MSAC-MMS) that brings an M2 up to Memory Stick PRO Duo size — it looks like an MS PRO Duo shell with an M2 inserted. It does **not** work in a PSP; the PSP's firmware does not recognize it.
+The M2 is Sony's micro format, used in Sony Ericsson phones, Walkman players, and the PSP Go. It's much smaller than MS PRO Duo (15 × 12.5 mm vs 31 × 20 mm). On a PSP 1000/2000/3000 it's useless; those models have no M2 slot. Sony also made an **M2 Adaptor** (MSAC-MMS) that puts an M2 into a MS PRO Duo-sized shell. Looks right, but the older PSP firmware won't recognize it. The PSP Go is the only PSP that uses M2 natively.
 
 <div class="img-grid">
-  <a class="img-card" href="#" data-caption="Sony M2 (Memory Stick Micro, 8GB). Sony's phone-era micro format — much smaller than MS PRO Duo, not for PSP.">
+  <a class="img-card" href="#" data-caption="Sony M2 (Memory Stick Micro, 8GB). Much smaller than MS PRO Duo. Not for PSP 1000/2000/3000.">
     <figure>
       <img src="{{ '/assets/images/memsticks/m2_memcard.webp' | relative_url }}" alt="sony m2 memory stick micro 8gb">
-      <figcaption>Sony M2 (Memory Stick Micro)</figcaption>
+      <figcaption>Sony M2</figcaption>
     </figure>
   </a>
-  <a class="img-card" href="#" data-caption="Sony M2 Adaptor (MSAC-MMS) with an M2 card inserted. It is the same size as an MS PRO Duo card, but only works in Sony phones and cameras — not the PSP.">
+  <a class="img-card" href="#" data-caption="Sony M2 Adaptor (MSAC-MMS) with an M2 card inserted. Same size as an MS PRO Duo card, but only works in Sony phones and cameras, not the PSP 1000/2000/3000.">
     <figure>
       <img src="{{ '/assets/images/memsticks/m2_and_m2adaptor.webp' | relative_url }}" alt="sony m2 with m2 adaptor msac-mms">
-      <figcaption>M2 + M2 Adaptor (MSAC-MMS) — not for PSP</figcaption>
+      <figcaption>M2 + M2 Adaptor</figcaption>
     </figure>
   </a>
 </div>
@@ -206,10 +207,10 @@ Standard SD and microSD cards are not compatible with the PSP's card slot in any
       <figcaption>Full-size SD card</figcaption>
     </figure>
   </a>
-  <a class="img-card" href="#" data-caption="A *probably* counterfeit microSD card. These report a false capacity, corrupt easily etc.">
+  <a class="img-card" href="#" data-caption="A microSD card. Standard microSD, not compatible with the PSP on its own.">
     <figure>
-      <img src="{{ '/assets/images/memsticks/fake_sd_card.png' | relative_url }}" alt="counterfeit microsd card">
-      <figcaption>Fake/counterfeit microSD. Please try to avoid these.</figcaption>
+      <img src="{{ '/assets/images/memsticks/fake_sd_card.png' | relative_url }}" alt="microsd card">
+      <figcaption>microSD card</figcaption>
     </figure>
   </a>
 </div>

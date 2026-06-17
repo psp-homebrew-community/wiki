@@ -4,7 +4,7 @@
 
 # wiki
 The PSP Homebrew Community Wiki
-Useless GH Pages fix commits: 1
+Useless GH Pages fix commits: 2
 
 ## How to add pages
 

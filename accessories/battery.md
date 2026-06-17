@@ -33,3 +33,5 @@ weights. Data from TotalKommando's excellent battery benchmarks
 |HASBAT|4000 mAh (Phat)|24 g|
 |Generic|1200 mAh (Phat)|23 g|
 
+
+If you have any batteries that are not listed, please weigh them and ping @koutsie on https://urlr.me/!psp - thank you!
