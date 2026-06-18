@@ -1,5 +1,5 @@
 ---
-layout: wide
+layout: default
 title: PSP Troubleshooting Wiki
 ---
 # PSP Troubleshooting Wiki
