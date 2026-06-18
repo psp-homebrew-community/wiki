@@ -1,3 +1,7 @@
+---
+layout: wide
+title: PSP Troubleshooting Wiki
+---
 # PSP Troubleshooting Wiki
 
 Common issues reported by the PSP community with possible causes and fixes.
