@@ -2285,24 +2285,52 @@
     "name": "SCE_ERROR_FACILITY_MEMSTICK",
     "description": "Memory Stick error facility",
     "errors": {
+      "0x0081": {
+        "name": "SCE_MSCM_ERROR_INVALID_PARAM",
+        "description": "The provided parameters are not correct"
+      },
+      "0x0082": {
+        "name": "SCE_MSCM_ERROR_NOMEM",
+        "description": "Out of memory"
+      },
+      "0x0083": {
+        "name": "SCE_MSCM_ERROR_OUT_OF_SERVICE",
+        "description": "Out of service"
+      },
+      "0x0084": {
+        "name": "SCE_MSCM_ERROR_NOT_FOUND",
+        "description": "Not found"
+      },
+      "0x0085": {
+        "name": "SCE_MSCM_ERROR_ALREADY",
+        "description": "Already"
+      },
+      "0x0086": {
+        "name": "SCE_MSCM_ERROR_BUSY",
+        "description": "Busy"
+      },
       "0x0087": {
-        "name": "SCE_MSCM_ERR_TIMEOUT",
+        "name": "SCE_MSCM_ERROR_TIMEOUT",
         "description": "timeout"
       },
       "0x0088": {
-        "name": "SCE_MSCM_ERR_CRC",
+        "name": "SCE_MSCM_ERROR_CRC",
         "description": "CRC error"
       },
       "0x0089": {
-        "name": "SCE_MSCM_ERR_TOE",
+        "name": "SCE_MSCM_ERROR_TOE",
         "description": "MS SMS TOE"
       },
+      "0x008A": {
+        "name": "SCE_MSCM_ERROR_DMA",
+        "description": "DMA error"
+      },
       "0x008B": {
-        "name": "SCE_MSCM_ERR_CMDNK",
+        "name": "SCE_MSCM_ERROR_CMDNK",
         "description": "CMDNK detected"
       },
       "0x008C": {
-        "name": "SCE_MSCM_ERR_FLASH",
+        "name": "SCE_MSCM_ERROR_FLASH",
         "description": "MS Flash error"
       },
       "0x0100": {
@@ -2310,39 +2338,39 @@
         "description": "warning error"
       },
       "0x0180": {
-        "name": "SCE_MSSTOR_ERR",
+        "name": "SCE_MSSTOR_ERROR",
         "description": "general error"
       },
       "0x0181": {
-        "name": "SCE_MSSTOR_EEXIST",
+        "name": "SCE_MSSTOR_ERROR_EEXIST",
         "description": "already exist"
       },
       "0x0182": {
-        "name": "SCE_MSSTOR_EACCESS",
+        "name": "SCE_MSSTOR_ERROR_EACCESS",
         "description": "access violation"
       },
       "0x0183": {
-        "name": "SCE_MSSTOR_EINVAL",
+        "name": "SCE_MSSTOR_ERROR_EINVAL",
         "description": "invalid parameter or mode"
       },
       "0x0184": {
-        "name": "SCE_MSSTOR_ETIMEDOUT",
+        "name": "SCE_MSSTOR_ERROR_ETIMEDOUT",
         "description": "timeout"
       },
       "0x0185": {
-        "name": "SCE_MSSTOR_ERR_WRITEPROTECTED",
+        "name": "SCE_MSSTOR_ERROR_WRITEPROTECTED",
         "description": "Media Write Protected"
       },
       "0x0186": {
-        "name": "SCE_MSSTOR_ERR_READONLY",
+        "name": "SCE_MSSTOR_ERROR_READONLY",
         "description": "Media is readonly media or state"
       },
       "0x0187": {
-        "name": "SCE_MSSTOR_ERR_NOBLOCK",
+        "name": "SCE_MSSTOR_ERROR_NOBLOCK",
         "description": "failed to allocate a block"
       },
       "0x0188": {
-        "name": "SCE_MSSTOR_ERR_INVALID_PARAM",
+        "name": "SCE_MSSTOR_ERROR_INVALID_PARAM",
         "description": "parameter invalid"
       }
     }
@@ -2655,9 +2683,17 @@
         "name": "SCE_AUDIO_ERROR_NOT_OUTPUT",
         "description": "not output"
       },
+      "0x000A": {
+        "name": "SCE_AUDIO_ERROR_INVALID_FREQUENCY",
+        "description": "invalid frequency"
+      },
       "0x000B": {
         "name": "SCE_AUDIO_ERROR_INVALID_VOLUME",
         "description": "invalid volume"
+      },
+      "0x0010": {
+        "name": "SCE_AUDIO_ERROR_INPUT_BUSY",
+        "description": "input busy"
       }
     }
   },
@@ -2691,15 +2727,15 @@
       },
       "0x0101": {
         "name": "SCE_POWER_ERROR_DETECTING",
-        "description": "Getting battery information"
+        "description": "Filed to obtain battery information"
       },
       "0x0200": {
         "name": "SCE_POWER_ERROR_CANNOT_LOCK_VMEM",
-        "description": "volatile memory locking failure"
+        "description": "Failed to lock volatile memory"
       },
       "0x0300": {
         "name": "SCE_POWER_ERROR_BAD_PRECONDITION",
-        "description": "Conditions when it cannot be used"
+        "description": "Invalid pre-conditions for operation"
       }
     }
   },
@@ -3841,23 +3877,27 @@
         "description": "Invalid format"
       },
       "0x5001": {
-        "name": "SCE_SSL_BEFORE_INIT",
+        "name": "SCE_SSL_ERROR_BEFORE_INIT",
         "description": "SSL operation attempted before initialization"
       },
       "0x5020": {
-        "name": "SCE_SSL_ALREADY_INITED",
+        "name": "SCE_SSL_ERROR_ALREADY_INITED",
         "description": "SSL module is already initialized"
       },
+      "0x5022": {
+        "name": "SCE_SSL_ERROR_OUT_OF_MEMORY",
+        "description": "Out of memory"
+      },
       "0x5025": {
-        "name": "SCE_SSL_NOT_FOUND",
+        "name": "SCE_SSL_ERROR_NOT_FOUND",
         "description": "Requested SSL resource not found"
       },
       "0x51FE": {
-        "name": "SCE_SSL_INVALID_VALUE",
+        "name": "SCE_SSL_ERROR_INVALID_VALUE",
         "description": "Invalid value was specified for SSL operation"
       },
       "0x5108": {
-        "name": "SCE_SSL_INVALID_FORMAT",
+        "name": "SCE_SSL_ERROR_INVALID_FORMAT",
         "description": "Invalid SSL data or format"
       }
     }
@@ -4116,6 +4156,14 @@
     "name": "SCE_ERROR_FACILITY_CPHIO",
     "description": "CPHIO error facility",
     "errors": {
+      "0x0108": {
+        "name": "SCE_PSHEET_ERROR_SEMAID",
+        "description": "Invalid semaphire id"
+      },
+      "0x0109": {
+        "name": "SCE_PSHEET_ERROR_ILLEGAL_ADDRESS",
+        "description": "Illegal address"
+      },
       "0x0201": {
         "name": "SCE_GAMEDATA_ERROR_INVALID_ARG",
         "description": "Invalid argument provided"
@@ -4154,7 +4202,16 @@
   "0x053": {
     "name": "SCE_ERROR_FACILITY_DNAS",
     "description": "DNAS error facility",
-    "errors": {}
+    "errors": {
+      "0x0300": {
+        "name": "SCE_DNAS_ERROR_OPERATION_FAILED",
+        "description": "The requested operation failed"
+      },
+      "0x0301": {
+        "name": "SCE_DNAS_ERROR_INVALID_ARGUMENTS",
+        "description": "The provided arguments are not correct"
+      }
+    }
   },
   "0x054": {
     "name": "SCE_ERROR_FACILITY_MTP",
