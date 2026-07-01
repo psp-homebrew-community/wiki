@@ -171,7 +171,7 @@ The M2 is Sony's micro format, used in Sony Ericsson phones, Walkman players, an
 
 <span class="section-label label-psp">PSP Go only</span>
 
-The PSP Go (N1000) has no Memory Stick PRO Duo slot. Instead it has a **Memory Stick Micro (M2)** slot on the side of the unit. Sony officially supported up to 16 GB. Since M2 cards are getting **expesnive**, the community made a flex-ribbon **microSD adapter** that plugs into the M2 slot and routes to a microSD card sticking out the side. PSP Go only; no other PSP model has an M2 slot.
+The PSP Go (N1000) has no Memory Stick PRO Duo slot. Instead it has a **Memory Stick Micro (M2)** slot on the side of the unit. Sony officially supported up to 16 GB. Since M2 cards are getting **expensive**, the community made a flex-ribbon **microSD adapter** that plugs into the M2 slot and routes to a microSD card sticking out the side. PSP Go only; no other PSP model has an M2 slot.
 
 <div class="img-grid">
   <a class="img-card" href="#" data-caption="A flex-ribbon adapter that connects to the PSP Go's internal M2 slot and accepts a standard microSD card. PSP Go only.">
